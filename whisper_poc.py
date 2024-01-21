@@ -1,10 +1,11 @@
-//
-
+#
 import openai
 
-openai.api_key = "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"
+import dotenv
 
-audio_file_path = open(r"C:\Users\admin\Documents\Hangfelvételek\teszt4.mp3", 'rb')
+openai.api_key = "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"
+
+audio_file_path = open(r".\audio\eazy.mp3", 'rb')
 
 transcript = openai.Audio.transcribe("whisper-1", 
                                      audio_file_path)
