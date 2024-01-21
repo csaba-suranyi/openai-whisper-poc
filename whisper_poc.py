@@ -1,9 +1,9 @@
 #
 import openai
 
-import dotenv
+from dotenv import load_dotenv
 
-openai.api_key = "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"
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 audio_file_path = open(r".\audio\eazy.mp3", 'rb')
 
